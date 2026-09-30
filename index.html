@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Моя компания — Главная</title>
+<meta name="description" content="Лендинг компании: услуги, портфолио, контакты">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#top" class="logo">MyCompany</a>
+
+    <nav class="nav" id="nav">
+      <ul class="nav__list">
+        <li><a href="#about" class="nav__link">О нас</a></li>
+        <li><a href="#services" class="nav__link">Услуги</a></li>
+        <li><a href="#portfolio" class="nav__link">Портфолио</a></li>
+        <li><a href="#contacts" class="nav__link">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <button class="burger" id="burger" aria-label="Открыть меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" id="top">
+    <div class="container hero__inner">
+      <h1 class="hero__title">Создаём сайты, которые продают</h1>
+      <p class="hero__text">Разработка, дизайн и продвижение сайтов под любые задачи бизнеса</p>
+      <a href="#contacts" class="btn btn--primary">Оставить заявку</a>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <h2 class="section-title">О нас</h2>
+      <p class="section-text">
+        Мы команда разработчиков и дизайнеров с опытом более 5 лет.
+        Делаем сайты, которые реально работают на результат — быстрые,
+        адаптивные и удобные для пользователей на любых устройствах.
+      </p>
+
+      <div class="about__grid">
+        <div class="about__card">
+          <h3>50+</h3>
+          <p>Завершённых проектов</p>
+        </div>
+        <div class="about__card">
+          <h3>5 лет</h3>
+          <p>На рынке</p>
+        </div>
+        <div class="about__card">
+          <h3>98%</h3>
+          <p>Довольных клиентов</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="container">
+      <h2 class="section-title">Услуги</h2>
+      <div class="services__grid">
+        <div class="service-card">
+          <h3>Веб-разработка</h3>
+          <p>Создание сайтов любой сложности: лендинги, интернет-магазины, корпоративные порталы.</p>
+        </div>
+        <div class="service-card">
+          <h3>Дизайн</h3>
+          <p>Современный UI/UX дизайн, адаптивные макеты, фирменный стиль.</p>
+        </div>
+        <div class="service-card">
+          <h3>Продвижение</h3>
+          <p>SEO-оптимизация, контекстная реклама, аналитика и рост конверсии.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <h2 class="section-title">Портфолио</h2>
+
+      <div class="portfolio__filter" id="filter">
+        <button class="filter-btn active" data-filter="all">Все</button>
+        <button class="filter-btn" data-filter="web">Сайты</button>
+        <button class="filter-btn" data-filter="shop">Магазины</button>
+        <button class="filter-btn" data-filter="app">Приложения</button>
+      </div>
+
+      <div class="portfolio__grid" id="portfolioGrid">
+        <div class="portfolio-item" data-category="web">
+          <div class="portfolio-item__img"></div>
+          <h3>Корпоративный сайт</h3>
+          <p>Веб-разработка</p>
+        </div>
+        <div class="portfolio-item" data-category="shop">
+          <div class="portfolio-item__img"></div>
+          <h3>Интернет-магазин</h3>
+          <p>E-commerce</p>
+        </div>
+        <div class="portfolio-item" data-category="app">
+          <div class="portfolio-item__img"></div>
+          <h3>Мобильное приложение</h3>
+          <p>Разработка приложений</p>
+        </div>
+        <div class="portfolio-item" data-category="web">
+          <div class="portfolio-item__img"></div>
+          <h3>Лендинг</h3>
+          <p>Одностраничный сайт</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacts" id="contacts">
+    <div class="container">
+      <h2 class="section-title">Контакты</h2>
+
+      <div class="contacts__grid">
+        <form class="contact-form" id="contactForm">
+          <label>
+            Имя
+            <input type="text" name="name" required>
+          </label>
+          <label>
+            Телефон
+            <input type="tel" name="phone" required>
+          </label>
+          <label>
+            Сообщение
+            <textarea name="message" rows="4"></textarea>
+          </label>
+          <button type="submit" class="btn btn--primary">Отправить</button>
+        </form>
+
+        <div class="contacts__info">
+          <p><strong>Адрес:</strong> г. Москва, ул. Примерная, д. 1</p>
+          <p><strong>Телефон:</strong> +7 (999) 123-45-67</p>
+          <p><strong>Email:</strong> info@mycompany.ru</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2024 MyCompany. Все права защищены.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
